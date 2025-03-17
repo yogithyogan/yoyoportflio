@@ -1,0 +1,480 @@
+<!--
+  Hello!
+  -
+  Simplefolio is a clean and responsive portfolio template for Developers!
+  Created by Jacobo Martinez.
+  -
+  Github Repo: https://github.com/cobiwave/simplefolio/
+  Readme: https://github.com/cobiwave/simplefolio/README.md
+  -
+  For business & inquires, contact me -> jacobojavier98@gmail.com
+-->
+<!DOCTYPE html>
+<html lang="en" class="sr">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="shortcut icon" type="image/png" href="assets/favicon.png" />
+
+    <!-- Todo: put here your site title -->
+    <title> Yogith | SDE</title>
+    <!-- Todo: add some coding keywords below - e.g: (javascript, yourusername, etc) -->
+    <meta name="keywords" content="[yogith ], [Yogith Yogan], skill" />
+    <!-- Todo: improve your SEO by adding a small description of you -->
+    <meta name="description" content="[Yogith Yogan] | SoftWare Developer" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.scss" />
+    <script
+      defer
+      src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"
+    ></script>
+
+    <!-- Todo: remove the below script once you finish your portfolio -->
+    <script async defer src="https://buttons.github.io/buttons.js"></script>
+  </head>
+
+  <!-- Todo: read the following HTML Todos to create your stunning portfolio website -->
+  <body>
+    <div id="top"></div>
+    <div class="hero-background"></div>
+    <nav id="navbar" class="navbar">
+      <!-- Center: Brand/Logo and Navigation links -->
+      <div class="navbar__content">
+        <!-- Left side: <yogith/> -->
+        <div class="navbar__brand">
+          <span class="navbar__logo">&lt;yogith yogan/&gt;</span>
+        </div>
+      
+        <!-- Right side: Navigation links -->
+        <ul class="navbar__list">
+          <li class="navbar__item">
+            <a href="#top" class="navbar__link">Home</a>
+          </li>
+          <li class="navbar__item">
+            <a href="#about" class="navbar__link">About</a>
+          </li>
+          <li class="navbar__item">
+            <a href="#skills" class="navbar__link">Skills</a>
+          </li>
+          <li class="navbar__item">
+            <a href="#projects" class="navbar__link">Projects</a>
+          </li>
+          <li class="navbar__item">
+            <a href="#contact" class="navbar__link">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <!-- **** Hero Section **** -->
+    <section id="hero" class="jumbotron">
+      <div class="container">
+        <h1 class="hero-title load-hidden">
+          Hi, my name is <span class="text-color-main">Yogith Yogan</span>
+          <br />
+          I'm a <span id="typing-text"></span><span class="cursor"></span>
+        </h1>
+        <p class="hero-cta load-hidden">
+          <a rel="noreferrer" class="cta-btn cta-btn--hero" href="#about">Know more</a>
+        </p>
+      </div>
+    </section>
+  </div>
+    <!-- /END Hero Section -->
+
+    <!-- **** About Section **** -->
+    <section id="about">
+      <div class="container">
+        <h2 class="section-title load-hidden">About Me</h2>
+        <div class="row about-wrapper">
+          <div class="col-md-6 col-sm-12">
+            <div class="about-wrapper__image load-hidden">
+              <img
+                alt="Profile Image"
+                class="img-fluid rounded-circle shadow-lg"
+                height="auto"
+                width="300px"
+                src="assets/yogith.jpg"
+                alt="Profile Image"
+              />
+            </div>
+          </div>
+          <div class="col-md-6 col-sm-12">
+            <div class="about-wrapper__info load-hidden">
+              <p class="about-wrapper__info-text">
+                Hi, I'm <span class="text-highlight">Yogith Yogan</span>, a passionate and versatile <span class="text-highlight">Software Developer</span> specializing in building modern web and mobile applications. With expertise in <span class="text-highlight">React.js</span>, <span class="text-highlight">Node.js</span>, <span class="text-highlight">Express</span>, <span class="text-highlight">Flutter</span>, <span class="text-highlight">React Native</span>, <span class="text-highlight">Spring Boot</span>, and databases like <span class="text-highlight">MySQL</span> and <span class="text-highlight">PostgreSQL</span>, I thrive on creating scalable, efficient, and user-friendly solutions that solve real-world problems.
+              </p>
+              <p class="about-wrapper__info-text">
+                I enjoy the entire development process—from brainstorming ideas and designing architectures to writing clean, maintainable code and deploying robust applications. Whether it's crafting a seamless user interface with <span class="text-highlight">React</span> or building a powerful backend with <span class="text-highlight">Node.js</span> and <span class="text-highlight">Spring Boot</span>, I love bringing ideas to life through technology.
+              </p>
+              <p class="about-wrapper__info-text">
+                Beyond coding, I have a deep appreciation for storytelling and the written word. Writing stories allows me to explore creativity and express ideas in unique ways, while reading books fuels my imagination and keeps me inspired. These passions not only enrich my personal life but also influence my approach to problem-solving and communication in my professional work.
+              </p>
+              <p class="about-wrapper__info-text">
+                I believe in continuous learning and growth, always staying updated with the latest trends and technologies in the software development world. My goal is to create impactful applications that make a difference while pursuing my love for storytelling and literature.
+              </p>
+              <span class="d-flex mt-4">
+                <a
+                  rel="noreferrer"
+                  target="_blank"
+                  class="cta-btn cta-btn--resume"
+                  href="assets/yogithResume .pdf"
+                >
+                  View Resume
+                </a>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- /END About Section -->
+<!-- **** Skills Section **** -->
+<section id="skills">
+  <div class="container">
+    <h2 class="section-title">Skills</h2>
+    <div class="skills-wrapper">
+      <!-- Technology Icons -->
+      <div class="skills-icons">
+        <!-- Existing Logos -->
+        <div class="skill-icon">
+          <img src="https://cdn.jsdelivr.net/npm/simple-icons@v5/icons/react.svg" alt="React" />
+          <span>React</span>
+        </div>
+        <div class="skill-icon">
+          <img src="https://cdn.jsdelivr.net/npm/simple-icons@v5/icons/nodedotjs.svg" alt="Node.js" />
+          <span>Node.js</span>
+        </div>
+        <div class="skill-icon">
+          <img src="https://cdn.jsdelivr.net/npm/simple-icons@v5/icons/flutter.svg" alt="Flutter" />
+          <span>Flutter</span>
+        </div>
+        <div class="skill-icon">
+          <img src="https://cdn.jsdelivr.net/npm/simple-icons@v5/icons/postgresql.svg" alt="PostgreSQL" />
+          <span>PostgreSQL</span>
+        </div>
+        <div class="skill-icon">
+          <img src="https://cdn.jsdelivr.net/npm/simple-icons@v5/icons/mysql.svg" alt="MySQL" />
+          <span>MySQL</span>
+        </div>
+        <div class="skill-icon">
+          <img src="https://cdn.jsdelivr.net/npm/simple-icons@v5/icons/spring.svg" alt="Spring Boot" />
+          <span>Spring Boot</span>
+        </div>
+
+        <!-- New Logos -->
+        <div class="skill-icon">
+          <img src="https://cdn.jsdelivr.net/npm/simple-icons@v5/icons/html5.svg" alt="HTML" />
+          <span>HTML</span>
+        </div>
+        <div class="skill-icon">
+          <img src="https://cdn.jsdelivr.net/npm/simple-icons@v5/icons/css3.svg" alt="CSS" />
+          <span>CSS</span>
+        </div>
+        <div class="skill-icon">
+          <img src="https://cdn.jsdelivr.net/npm/simple-icons@v5/icons/javascript.svg" alt="JavaScript" />
+          <span>JavaScript</span>
+        </div>
+        <div class="skill-icon">
+          <img src="https://cdn.jsdelivr.net/npm/simple-icons@v5/icons/express.svg" alt="Express.js" />
+          <span>Express.js</span>
+        </div>
+        <div class="skill-icon">
+          <img src="https://cdn.jsdelivr.net/npm/simple-icons@v5/icons/react.svg" alt="React Native" />
+          <span>React Native</span>
+        </div>
+        <div class="skill-icon">
+          <img src="https://cdn.jsdelivr.net/npm/simple-icons@v5/icons/github.svg" alt="GitHub" />
+          <span>GitHub</span>
+        </div>
+        <div class="skill-icon">
+          <img src="https://cdn.jsdelivr.net/npm/simple-icons@v5/icons/visualstudiocode.svg" alt="VS Code" />
+          <span>VS Code</span>
+        </div>
+        <div class="skill-icon">
+          <img src="https://cdn.jsdelivr.net/npm/simple-icons@v5/icons/androidstudio.svg" alt="Android Studio" />
+          <span>Android Studio</span>
+        </div>
+        <div class="skill-icon">
+          <img src="https://cdn.jsdelivr.net/npm/simple-icons@v5/icons/postman.svg" alt="Postman" />
+          <span>Postman</span>
+        </div>
+        <div class="skill-icon">
+          <img src="https://cdn.jsdelivr.net/npm/simple-icons@v5/icons/tailwindcss.svg" alt="Tailwind CSS" />          <span>Tailwind CSS</span>
+        </div>
+        <div class="skill-icon">
+          <img src="https://cdn.jsdelivr.net/npm/simple-icons@v5/icons/bootstrap.svg" alt="Bootstrap" />          <span>Bootstrap</span>
+        </div>
+        <div class="skill-icon">
+          <img src="https://cdn.jsdelivr.net/npm/simple-icons@v5/icons/typescript.svg" alt="TypeScript" />          <span>TypeScript</span>
+        </div>
+      </div>
+
+      <!-- Skill Progress Bars -->
+      <div class="skills-progress">
+        <div class="skill-item">
+          <span class="skill-name">Frontend</span>
+          <div class="progress-bar">
+            <div class="progress" data-width="96%"></div>
+          </div>
+        </div>
+        <div class="skill-item">
+          <span class="skill-name">Backend</span>
+          <div class="progress-bar">
+            <div class="progress" data-width="95%"></div>
+          </div>
+        </div>
+        <div class="skill-item">
+          <span class="skill-name">Programming</span>
+          <div class="progress-bar">
+            <div class="progress" data-width="87%"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- /END Skills Section -->
+    <!-- **** Projects Section **** -->
+    <section id="projects">
+      <div class="container">
+        <div class="project-wrapper">
+          <h2 class="section-title dark-blue-text">Projects</h2>
+
+          <!-- Notice: each .row is a project -->
+          <div class="row">
+            <div class="col-lg-4 col-sm-12">
+              <div class="project-wrapper__text load-hidden">
+                <h3 class="project-wrapper__text-title">Transaction Management System (TMS)</h3>
+                <div>
+                  <p class="mb-4">
+                    A robust enterprise solution for handling financial transactions, approvals, and audits.
+                  </p>
+                </div>
+                <a
+                  rel="noreferrer"
+                  target="_blank"
+                  class="cta-btn cta-btn--hero"
+                  href="project-tms.html"
+                >
+                  View Details
+                </a>
+           
+              </div>
+            </div>
+            <div class="col-lg-8 col-sm-12">
+              <div class="project-wrapper__image load-hidden">
+                <a rel="noreferrer" href="project-tms.html" ">
+                  <div
+                    data-tilt
+                    data-tilt-max="4"
+                    data-tilt-glare="true"
+                    data-tilt-max-glare="0.5"
+                    class="thumbnail rounded js-tilt"
+                  >
+                    <img
+                      alt="Project Image"
+                      class="img-fluid"
+                      src="assets/TMS.png"
+                    />
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+          <!-- /END Project -->
+
+          <!-- Notice: each .row is a project -->
+         <!-- Example Project Section -->
+         <div class="row">
+          <div class="col-lg-4 col-sm-12">
+            <div class="project-wrapper__text load-hidden">
+              <h3 class="project-wrapper__text-title">Immigrant Platform</h3>
+              <div>
+                <p class="mb-4">
+                  A comprehensive platform designed for student migrants in australia, offering part-time job opportunities, food and accommodation assistance, tourism guides, and community support.
+                </p>
+              </div>
+              <a
+                rel="noreferrer"
+                "
+                class="cta-btn cta-btn--hero"
+                href="project-australia.html"
+              >
+                View Details
+              </a>
+            </div>
+          </div>
+          <div class="col-lg-8 col-sm-12">
+            <div class="project-wrapper__image load-hidden">
+              <a rel="noreferrer" href="project-australia.html" ">
+                <div
+                  data-tilt
+                  data-tilt-max="4"
+                  data-tilt-glare="true"
+                  data-tilt-max-glare="0.5"
+                  class="thumbnail rounded js-tilt"
+                >
+                  <img
+                    alt="Project Image"
+                    class="img-fluid"
+                    src="assets/Voyage to Australia.png"
+                  />
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+          <!-- /END Project -->
+    
+          <!-- Modal for Project Details -->
+   <!-- Modal for Project Details -->
+
+          <!-- /END Project -->
+
+          <!-- Notice: each .row is a project -->
+          <div class="row">
+            <div class="col-lg-4 col-sm-12">
+              <div class="project-wrapper__text load-hidden">
+                <h3 class="project-wrapper__text-title">AGAS International Australia</h3>
+                <div>
+                  <p class="mb-4">
+                    A comprehensive gas booking and management system for AGAS International Australia, enabling gas booking, driver and yard management, dispatch activities, and more. Developed for both web and mobile platforms.
+                  </p>
+                </div>
+                <a
+                  rel="noreferrer"
+                  "
+                  class="cta-btn cta-btn--hero"
+                  href="project-agas.html"
+                >
+                  View Details
+                </a>
+              </div>
+            </div>
+            <div class="col-lg-8 col-sm-12">
+              <div class="project-wrapper__image load-hidden">
+                <a rel="noreferrer" href="project-agas.html" ">
+                  <div
+                    data-tilt
+                    data-tilt-max="4"
+                    data-tilt-glare="true"
+                    data-tilt-max-glare="0.5"
+                    class="thumbnail rounded js-tilt"
+                  >
+                    <img
+                      alt="Project Image"
+                      class="img-fluid"
+                      src="assets/Agas.png"
+                    />
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+          
+          <!-- /END Project -->
+        </div>
+      </div>
+    </section>
+    <!-- /END Projects Section -->
+
+<!-- **** Contact Section **** -->
+<section id="contact">
+  <div class="container">
+    <h2 class="section-title">Get in Touch</h2>
+    <div class="contact-wrapper load-hidden">
+      <p class="contact-wrapper__text">
+        Let's build something amazing together! Feel free to reach out. 😊
+      </p>
+      <div class="contact-options">
+        <a
+          rel="noreferrer"
+          target="_blank"
+          class="cta-btn cta-btn--resume"
+          href="mailto:yogithyogan2004x@gmail.com"
+        >
+          <i class="fa fa-envelope"></i> Email Me
+        </a>
+        <!-- <a
+          rel="noreferrer"
+          target="_blank"
+          class="cta-btn cta-btn--resume"
+          href="tel:9042100281"
+        >
+          <i class="fa fa-phone"></i> Call Me
+        </a> -->
+      </div>
+      <div class="contact-details">
+        <p><i class="fa fa-envelope"></i> yogithyoganx@gmail.com</p>
+        <p><i class="fa fa-phone"></i>9042100281</p>
+      </div>
+      <div class="social-links">
+        <a rel=" noopener noreferrer" href="https://x.com/YoganYogith?t=f7ClOmc0QyDTwXYwJb0vLw&s=09" target="_blank" class="social-link">
+          <i class="fa fa-twitter"></i>
+        </a>
+        <a rel="noopener noreferrer" href="https://www.linkedin.com/in/yogith-yogan" target="_blank" class="social-link">
+          <i class="fa fa-linkedin"></i>
+        </a>
+        <a rel=" noopener noreferrer" href="https://www.instagram.com/__yoyo._jmr__/" target="_blank" class="social-link">
+          <i class="fa fa-instagram"></i>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+    <!-- /END Contact Section -->
+
+    <!-- **** Footer Section **** -->
+    <footer class="footer navbar-static-bottom">
+      <div class="container">
+        <a rel="noreferrer" href="#top" class="back-to-top">
+          <i class="fa fa-angle-up fa-2x" aria-hidden="true"></i>
+        </a>
+      
+
+        <hr />
+
+        <!-- Notice: if you want to give me some credit, it will be huge for me! if not, put your data on it -->
+        <p class="footer__text">
+            developed by
+          <!-- <a rel="noreferrer" href="https://github.com/cobiwave" target="_blank" -->
+            >yogith yogan</a
+          >
+        </p>
+
+        <!-- TO DO: remove this entire paragraph once you finish your portfolio -->
+        <p class="mt-3 pt-3">
+          <!-- <a
+            rel="noreferrer"
+            class="github-button"
+            href="https://github.com/cobiwave/simplefolio/fork"
+            data-icon="octicon-repo-forked"
+            data-size="large"
+            data-show-count="true"
+            aria-label="Fork ntkme/github-buttons on GitHub"
+            >Fork</a
+          >
+          <a
+            rel="noreferrer" 
+            class="github-button"
+            href="https://github.com/cobiwave/simplefolio"
+            data-icon="octicon-star"
+            data-size="large"
+            data-show-count="true"
+            aria-label="Star cobiwave/simplefolio on GitHub"
+            >Star</a -->
+          <!-- > -->
+        </p>
+      </div>
+    </footer>
+    <!-- /END Footer Section -->
+
+    <script defer type="module" src="index.js"></script>
+  </body>
+</html>

@@ -1,0 +1,119 @@
+#contact {
+  background-image: linear-gradient(
+    135deg,
+    $primary-color 0%,
+    $secondary-color 100%
+  );
+  -webkit-clip-path: polygon(0 15vh, 100% 0, 100% 100%, 0 100%);
+  clip-path: polygon(0 15vh, 100% 0, 100% 100%, 0 100%);
+  padding: 15rem 0 10rem 0;
+  margin-top: -10rem;
+  margin-bottom: -1px;
+  color: $white-color;
+  text-align: center;
+
+  @include respond(tab-land) {
+    padding: 10rem 0;
+    clip-path: none;
+    margin-top: 0;
+    -webkit-clip-path: none;
+  }
+
+  .section-title {
+    font-size: 4rem;
+    margin-bottom: 2rem;
+    color: $white-color;
+    animation: fadeIn 1s ease-in-out;
+  }
+
+  .contact-wrapper {
+    margin-top: 3.2rem;
+    padding: 0 2rem;
+    backface-visibility: hidden;
+
+    &__text {
+      font-size: 2rem;
+      margin-bottom: 3rem;
+      animation: slideUp 1s ease-in-out;
+    }
+
+    .contact-options {
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      margin-bottom: 3rem;
+
+      .cta-btn--resume {
+        background-color: $primary-color;
+        color: white;
+        padding: 12px 24px;
+        text-decoration: none;
+        font-size: 1.2rem;
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        transition: all 0.3s ease;
+
+        &:hover {
+         
+          color:$primary-color;
+          transform: translateY(-3px);
+          box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+        }
+      }
+    }
+
+    .contact-details {
+      font-size: 1.5rem;
+      margin-bottom: 3rem;
+      animation: fadeIn 1.5s ease-in-out;
+
+      p {
+        margin: 0.5rem 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 8px;
+      }
+    }
+
+    .social-links {
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      animation: fadeIn 2s ease-in-out;
+
+      .social-link {
+        color: white;
+        font-size: 2.5rem;
+        transition: all 0.3s ease;
+
+        &:hover {
+          color: #A35C7A;
+          transform: translateY(-5px);
+        }
+      }
+    }
+  }
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideUp {
+  from {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}

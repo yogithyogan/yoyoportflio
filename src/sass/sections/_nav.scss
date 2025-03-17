@@ -1,0 +1,124 @@
+/* Navigation Bar Styles */
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #ffffff; /* White background */
+  z-index: 1000; /* Ensure the navbar is above other elements */
+  padding: 15px 20px; /* Increased padding for better spacing */
+  display: flex;
+  justify-content: center; /* Center the navbar content */
+  align-items: center;
+  box-shadow: 0 2px 10px rgba(181, 61, 151, 0.1); /* Subtle shadow for depth */
+}
+
+/* Center content wrapper */
+.navbar__content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-width: 1200px; /* Adjust as needed */
+}
+
+/* Left side: Brand/Logo */
+.navbar__brand {
+  font-size: 2rem; /* Increased font size */
+  font-weight: bold;
+  color: #A35C7A; /* Custom color for brand */
+  font-family: 'Poppins', sans-serif; /* Modern font */
+}
+
+.navbar__logo {
+  color: #A35C7A; /* Custom color for <yogith/> */
+  font-family: 'Poppins', sans-serif; /* Modern font */
+  font-weight: bold;
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+/* Hover effect for logo */
+.navbar__logo:hover {
+  transform: scale(1.1); /* Slightly scale up on hover */
+  color: #f89ed9; /* Change color on hover */
+}
+
+/* Right side: Navigation links */
+.navbar__list {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar__item {
+  margin-left: 20px; /* Spacing between buttons */
+}
+
+.navbar__link {
+  color: #333; /* Dark text color */
+  text-decoration: none;
+  font-size: 1.2rem; /* Increased font size */
+  font-weight: 500; /* Medium font weight */
+  transition: all 0.3s ease;
+  position: relative;
+  padding: 10px 20px; /* Padding for button-like appearance */
+  border-radius: 25px; /* Rounded corners */
+  background-color: #ffffff; /* Light gray background */
+  border: 2px solid #A35C7A; /* Border color */
+}
+
+/* Hover effect for buttons */
+.navbar__link:hover {
+  background-color: #A35C7A; /* Change background color on hover */
+  color: #ffffff; /* Change text color on hover */
+  transform: translateY(-3px); /* Slight upward movement */
+  box-shadow: 0 4px 8px rgba(163, 92, 122, 0.2); /* Add shadow on hover */
+}
+
+/* Active navigation link */
+.navbar__link.active {
+  background-color: #A35C7A; /* Active background color */
+  color: #ffffff; /* Active text color */
+  font-weight: bold;
+}
+
+/* Optional: Add a subtle animation to the navbar on page load */
+@keyframes slideDown {
+  from {
+    transform: translateY(-100%);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
+.navbar {
+  animation: slideDown 0.5s ease-out;
+}
+
+/* Hide <yogith yogan/> on mobile screens */
+@media (max-width: 768px) {
+  .navbar__brand {
+    display: none; /* Hide the logo */
+  }
+
+  .navbar__content {
+    justify-content: center; /* Center the navigation links */
+  }
+
+  .navbar__list {
+    margin-left: 0; /* Remove left margin */
+  flex-wrap: wrap; /* Allow wrapping for small screens */
+    justify-content: center; /* Center buttons */
+    gap: 10px; /* Spacing between buttons */
+  }
+
+  .navbar__link {
+    font-size: 1rem; /* Smaller font size for mobile */
+    padding: 8px 16px; /* Smaller padding for mobile */
+  }
+}
